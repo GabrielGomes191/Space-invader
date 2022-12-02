@@ -105,8 +105,6 @@ def main(dificuldade, difirap):
 
         vidas, invencibilidade = atirar_alien(lista2, janela3, lista_tirosalien, vely, nave, vidas, lista_vidas, invencibilidade, difirap)
 
-        print(difirap, dificuldade)
-
         if invencibilidade > 0:
             piscada.x = nave.x
             piscada.y = nave.y

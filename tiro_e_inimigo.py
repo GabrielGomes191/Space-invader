@@ -9,11 +9,11 @@ janela_largura = 720
 def atirar(nave, janela, teclado, vely, lista, cooldown):
     if teclado.key_pressed("SPACE") and cooldown == 0:
         criar_shoot(lista, nave)
-        cooldown = 25
+        cooldown = 35
     if len(lista) > 0:
         for shoot in lista:
             shoot.draw()
-            shoot.y -= 1000 * janela.delta_time()
+            shoot.y -= 1300 * janela.delta_time()
             if shoot.y < -10:
                 lista.remove(shoot)
     if cooldown > 0:

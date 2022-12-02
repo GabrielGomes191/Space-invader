@@ -13,7 +13,7 @@ from pygame import mixer
 def menu():
 
     mixer.init()
-    mixer.music.load("assets\A-cruel-angel-s-thesis-director-s-edit-version.wav")
+    mixer.music.load("assets\A-cruel-angel-s-thesis-director-s-edit-version (1).wav")
     mixer.music.set_volume(0.5)
     mixer.music.play(-1)
 
@@ -30,22 +30,22 @@ def menu():
 
     #titulo
     titulo = Sprite("assets\Titulo.png")
-    titulo.set_position(janela.width/2 - 230 , -20)
+    titulo.set_position(janela.width/2 - 390  , -240)
 
     #fundo do menu
     background = Sprite("assets\menud.jpg")
 
     #botao play
     play = Sprite("assets\play.png")
-    play.set_position(janela.width/2 - play.width +75, 350)
+    play.set_position(janela.width/2 - play.width + 58, 350)
 
     #botao exit
     exit = Sprite("assets\exit.png")
-    exit.set_position(janela.width/2 - play.width +75 , 450)
+    exit.set_position(janela.width/2 - play.width + 58 , 450)
 
     #config
     config = Sprite("assets\settings.png")
-    config.set_position(janela.width/2 - play.width +75 , 550)
+    config.set_position(janela.width/2 - play.width + 58 , 550)
 
     #rank
     ranki = Sprite("assets\Rank.png")
